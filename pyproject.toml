@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "glipy-cli"
+version = "0.1.0"
+description = ""
+authors = ["noprobelm <noprobelm@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+glipy = {path = "../glipy"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+'cgol' = 'cgol.__main__:main'
