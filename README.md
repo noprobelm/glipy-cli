@@ -35,14 +35,3 @@ Cloverleaf Interchange hassled by carnival shuttles: `glipy-cli https://conwayli
 
 Use custom colors from ANSI/hex codes: `glipy-cli https://conwaylife.com/patterns/387p132pattern.rle --colors "#81A1C1 #3B4252"`
 ![387p132](media/p387p132.gif)
-
-## Using glipy in your project
-
-If you want to create new cell/state rules, extend the existing algorithms driving an automaton's evolution, or use your own rendering tools, you might want to use `glipy` in your own project.
-
-### The Cell and CellState Protocol
-The `Cell` and `CellState` classes (see the `cell` and `state` modules) inherit from `Protocol` to provide maximum flexbility. In other words, you do not need to inerit from these classes, or even import them to your project at all. Simply write your own cell or cell state classes which implement the methods defined in the respective protocol class. The `MooreCell` and `ConwayState` classes in each module should be observed as examples on how to do this properly.
-
-### The Automaton class
-
-The `Automaton` class is responsible for driving a simluation. It is generic over `Cell` and `CellState`, meaning it will accept any class which implements the methods necessary to be considered `Cell` or `CellState` as described in the previous section (Of course, this is Python, so `Automaton` will technically accept anything, but if you don't want your static type checker to yell at you, you should implement properly).
