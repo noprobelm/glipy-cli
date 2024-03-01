@@ -7,7 +7,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-glipy = {path = "../glipy"}
+glipy = {git = "https://github.com/noprobelm/glipy.git"}
+rich = "^13.7.1"
 
 
 [build-system]

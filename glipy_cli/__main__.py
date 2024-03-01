@@ -18,14 +18,8 @@ def main() -> None:
         xmax=console.width,
         ymax=console.height * 2,
     )
-    try:
-        renderer.spawn(renderer.midpoint - result.automaton.midpoint, result.automaton)
-        renderer.run(**result.start_kwargs)
-    except Exception as e:
-        print(
-            f"{renderer.xmax}, {renderer.ymax}, {result.automaton.xmax}, {result.automaton.ymax}"
-        )
-        print(e)
+    renderer.spawn(renderer.midpoint - result.automaton.midpoint, result.automaton)
+    renderer.run(**result.start_kwargs)
 
 
 if __name__ == "__main__":
