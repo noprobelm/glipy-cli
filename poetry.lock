@@ -112,7 +112,7 @@ files = [
 
 [[package]]
 name = "glipy"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 optional = false
 python-versions = "^3.11"
@@ -125,8 +125,8 @@ requests = "^2.31.0"
 [package.source]
 type = "git"
 url = "https://github.com/noprobelm/glipy.git"
-reference = "HEAD"
-resolved_reference = "30010ba5106438cbb549276a3ca8bc34816d7ff0"
+reference = "devel"
+resolved_reference = "d25e7698d40e201253bba2ceea95ae3f3741d1ae"
 
 [[package]]
 name = "idna"
@@ -248,4 +248,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "4ca63b2356acea1edc89e23cfa745b67ad9167a339061ee2e99114f9fb958513"
+content-hash = "80939dbd16b8e25b98bdc9976dd92ef7792a05c96bd46f173c71ab3615bbf228"
