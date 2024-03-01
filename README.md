@@ -33,5 +33,5 @@ Gosper Glider Gun: `glipy-cli https://conwaylife.com/patterns/gosperglidergun.rl
 Cloverleaf Interchange hassled by carnival shuttles: `glipy-cli https://conwaylife.com/patterns/p12cloverleafhassler.rle`
 ![Cloverleaf Hassler](media/cloverleaf-interchange.gif)
 
-Use custom colors from ANSI/hex codes: `glipy-cli https://conwaylife.com/patterns/387p132pattern.rle --colors "#81A1C1 #3B4252"`
+Use custom colors from hex codes: `glipy-cli https://conwaylife.com/patterns/387p132pattern.rle --colors "#81A1C1 #3B4252"`
 ![387p132](media/p387p132.gif)
