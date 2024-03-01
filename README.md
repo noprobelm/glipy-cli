@@ -13,14 +13,15 @@
 Quickly render a random simulation by running `glipy-cli` in your terminal.
 
 `glip-cli` has several command line options
-| Option                          | Description                                                                                                                         |
-|:--------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| Option                            | Description                                                                                                                         |
+|:----------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
 | \<target\> [positional; optional] | If no target is passed, render a random simulation. Accepts paths to .rle/.life, or remote URL to rle format                        |
-| -r --refresh-rate               | Specify a refresh rate (generations/second)                                                                                         |
-| -g --generations                | The number of generations a simulation should run for (default ∞)                                                                   |
-| -c --colors                     | Specify colors for dead/alive cells (accepts hex or [ANSI color codes](https://rich.readthedocs.io/en/stable/appendix/colors.html)) |
-| -x --debug                      | Enter debug mode. This will turn off terminal rendering and provide performance metrics after the simulation is terminated          |
-| -n --no-render                  | Do not render the simulation (debug will automatically trigger this)                                                                |
+| -r --refresh-rate                 | Specify a refresh rate (generations/second)                                                                                         |
+| -g --generations                  | The number of generations a simulation should run for (default ∞)                                                                   |
+| -t --cell-type                    | Specify the cell type to use. Options: `moore`, `neumann`                                                                                                                                    |
+| -c --colors                       | Specify colors for dead/alive cells (accepts hex or [ANSI color codes](https://rich.readthedocs.io/en/stable/appendix/colors.html)) |
+| -x --debug                        | Enter debug mode. This will turn off terminal rendering and provide performance metrics after the simulation is terminated          |
+| -n --no-render                    | Do not render the simulation (debug will automatically trigger this)                                                                |
 
 ## Examples
 
