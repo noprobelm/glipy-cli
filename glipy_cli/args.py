@@ -5,7 +5,8 @@ import sys
 from collections import namedtuple
 from typing import List, Optional
 
-from glipy import from_rle_url, from_conway_rle, from_conway_life, random_conway
+from glipy import (from_conway_life, from_conway_rle, from_rle_url,
+                   random_conway)
 from glipy.color import Color
 
 from . import console

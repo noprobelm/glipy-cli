@@ -1,12 +1,11 @@
 """Main entrypoint for running a simulation from the command line"""
 
-from .args import parse_args
-from .renderer import Renderer
-
 from glipy.cell import MooreCell
 from glipy.state import ConwayState
 
 from . import console
+from .args import parse_args
+from .renderer import Renderer
 
 
 def main() -> None:

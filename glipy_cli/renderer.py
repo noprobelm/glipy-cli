@@ -1,9 +1,8 @@
 import sys
-from typing import Union
 import time
+from typing import Union
 
 from glipy.automaton import Automaton
-
 from rich.console import Console, ConsoleOptions, RenderResult
 from rich.live import Live
 from rich.segment import Segment
