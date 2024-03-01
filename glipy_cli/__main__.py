@@ -1,6 +1,5 @@
 """Main entrypoint for running a simulation from the command line"""
 
-from glipy.cell import MooreCell
 from glipy.state import ConwayState
 
 from . import console
@@ -13,8 +12,8 @@ def main() -> None:
     result = parse_args()
 
     renderer = Renderer(
-        cell_type=MooreCell,
-        initial_state=ConwayState,
+        cell_type=result.automaton.cell_type,
+        initial_state=ConwayState(),
         xmax=console.width,
         ymax=console.height * 2,
     )
